@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('./fonts/gilroy/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url('./fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yellow: #FECE3E;
+  --purple: #F4E2FF;
+  --pink: #FFB9B7;
+  --gray: #BDCAC0;
+  --white: #FAF6F1;
+}
