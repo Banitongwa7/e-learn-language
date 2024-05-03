@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiYoutube } from "react-icons/ci";
+import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 
 export default function Home() {
   return (
@@ -13,11 +14,21 @@ export default function Home() {
         <nav className="flex justify-around items-center w-full py-8">
           <h2 className="text-3xl font-gilroy-bold">E-learn</h2>
           <ul className="flex gap-10 font-gilroy-medium">
-            <li>Home</li>
-            <li>About</li>
-            <li>Student info</li>
-            <li>Support</li>
-            <li>Admissions</li>
+            <li>
+              <Link href="#">Home</Link>
+            </li>
+            <li>
+              <Link href="#">About</Link>
+            </li>
+            <li>
+              <Link href="#">Student info</Link>
+            </li>
+            <li>
+              <Link href="#">Support</Link>
+            </li>
+            <li>
+              <Link href="#">Admissions</Link>
+            </li>
           </ul>
           <Link
             href="#"
@@ -176,7 +187,17 @@ export default function Home() {
 
       <section></section>
 
-      <section className="newsletter"></section>
+      <section className="bg-[--white] px-28 py-20 flex flex-col justify-center items-center space-y-10">
+        <h2 className="text-6xl font-gilroy-bold">Subscribe our newsletter</h2>
+        <p className="font-gilroy-medium w-[50%] text-center">
+          Teaches You How To Communicate Your Unique Comedy Skillfully comedy
+          workshop. Virtual stand up comedy. Virtual comedy class.
+        </p>
+        <form action="#" className="flex gap-12 border-b border-black pb-3">
+          <input type="email" placeholder="Enter your E-mail address" className="bg-[--white] font-gilroy-medium placeholder:text-black w-[300px] focus:outline-none"/>
+          <button className="text-3xl" type="submit"><LiaLongArrowAltRightSolid /></button>
+        </form>
+      </section>
 
       <footer className="bg-[--purple] py-11 px-28">
         <div className="flex justify-between items-center w-full">
@@ -204,16 +225,15 @@ export default function Home() {
 
         <div className="flex justify-between">
           <div className="font-gilroy-medium flex gap-20">
-          <p>© {new Date().getFullYear()}. All Rights Reserved.</p>
-          <Link href="#">Terms Of Use</Link>
-          <Link href="#">Privacy Policy</Link>
+            <p>© {new Date().getFullYear()}. All Rights Reserved.</p>
+            <Link href="#">Terms Of Use</Link>
+            <Link href="#">Privacy Policy</Link>
           </div>
 
           <div>
             <p className="font-gilroy-medium">Design By Orix Agency</p>
           </div>
         </div>
-
       </footer>
     </div>
   );
